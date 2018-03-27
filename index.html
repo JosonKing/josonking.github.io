@@ -363,15 +363,18 @@
       
         
           
-            <h2 id="java是一种强类型语言，针对每一种数据都定义了明确的数据类型"><a href="#java是一种强类型语言，针对每一种数据都定义了明确的数据类型" class="headerlink" title="java是一种强类型语言，针对每一种数据都定义了明确的数据类型"></a>java是一种强类型语言，针对每一种数据都定义了明确的数据类型</h2><h3 id="数据类型分类"><a href="#数据类型分类" class="headerlink" title="数据类型分类"></a>数据类型分类</h3><p>基本数据类型（8种）<br>引用数据类型（类，接口，数值）</p>
+            <h2 id="java是一种强类型语言，针对每一种数据都定义了明确的数据类型"><a href="#java是一种强类型语言，针对每一种数据都定义了明确的数据类型" class="headerlink" title="java是一种强类型语言，针对每一种数据都定义了明确的数据类型"></a>java是一种强类型语言，针对每一种数据都定义了明确的数据类型</h2><h3 id="数据类型分类"><a href="#数据类型分类" class="headerlink" title="数据类型分类"></a>数据类型分类</h3><blockquote>
+<p>基本数据类型（8种）<br><br>引用数据类型（类，接口，数值）</p>
+</blockquote>
 <h3 id="资本数据类型（4类8种）"><a href="#资本数据类型（4类8种）" class="headerlink" title="资本数据类型（4类8种）"></a>资本数据类型（4类8种）</h3><table>
 <thead>
 <tr>
 <th>类型</th>
 <th>数据类型</th>
-<th>占用字节数</th>
+<th>占用字节数(存储空间)</th>
 <th>总占用位数</th>
 <th>数值位占用位数</th>
+<th>表数范围</th>
 </tr>
 </thead>
 <tbody>
@@ -381,6 +384,7 @@
 <td>1</td>
 <td>8</td>
 <td>7</td>
+<td>-2^7 ~ 2^7-1(-128 ~ 127)</td>
 </tr>
 <tr>
 <td>整数</td>
@@ -388,6 +392,7 @@
 <td>2</td>
 <td>16</td>
 <td>15</td>
+<td>-2^15 ~ 2^15-1</td>
 </tr>
 <tr>
 <td>整数</td>
@@ -395,6 +400,7 @@
 <td>4</td>
 <td>32</td>
 <td>31</td>
+<td>-2^31 ~ 2^31-1</td>
 </tr>
 <tr>
 <td>整数</td>
@@ -402,6 +408,7 @@
 <td>8</td>
 <td>64</td>
 <td>63</td>
+<td>-2^53 ~ 2^63-1</td>
 </tr>
 <tr>
 <td>浮点数</td>
@@ -409,6 +416,7 @@
 <td>4</td>
 <td>32</td>
 <td>31</td>
+<td>-3.403E38 ~ 3.403E38</td>
 </tr>
 <tr>
 <td>浮点数</td>
@@ -416,6 +424,7 @@
 <td>8</td>
 <td>64</td>
 <td>63</td>
+<td>-1.798E38 ~ 1.798E38</td>
 </tr>
 <tr>
 <td>字符</td>
@@ -423,6 +432,7 @@
 <td>2</td>
 <td>16</td>
 <td>15</td>
+<td></td>
 </tr>
 <tr>
 <td>布尔</td>
@@ -433,6 +443,9 @@
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>整数默认int类型，浮点数默认double类型。</p>
+</blockquote>
 
           
         
@@ -741,7 +754,9 @@
 <p>javac 跟文件名及后缀，java 只跟文件名</p>
 <h3 id="文件名和类名不可以一致，建议一致"><a href="#文件名和类名不可以一致，建议一致" class="headerlink" title="文件名和类名不可以一致，建议一致"></a>文件名和类名不可以一致，建议一致</h3><p>文件名和类名不一致， 生成class字节码文件名与类名一致。java命令后执行文件即类名</p>
 <h3 id="path-amp-amp-classpath"><a href="#path-amp-amp-classpath" class="headerlink" title="path &amp;&amp; classpath"></a>path &amp;&amp; classpath</h3><p>path: 使得在任意路径下可以使用javac/java命令<br>classpath: 使得在任意路径下可以使用.class文件</p>
+<blockquote>
 <p>classpath 路径不能有中文</p>
+</blockquote>
 
           
         
