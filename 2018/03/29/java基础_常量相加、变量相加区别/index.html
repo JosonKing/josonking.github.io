@@ -85,7 +85,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/03/29/java基础_常量相加、变量相加区别/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="123byte b1 = 3;byte b2 = 4;byte b3; 变量相加 变量相加，会将结果转为类型较大的，若为byte、char、short，则转为int。  1b3 = b1 + b2; //报错，右边计算结果为`int`类型 常量相加 常量相加，会先将结果计算出来，然后看是否在接收变量类型范围内，如果不在则报错。  12b3 = 3 + 4; //不会报错b3 = 300000000">
-<meta property="og:updated_time" content="2018-03-29T14:49:36.692Z">
+<meta property="og:updated_time" content="2018-03-29T15:11:05.932Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java基础_常量相加、变量相加区别">
 <meta name="twitter:description" content="123byte b1 = 3;byte b2 = 4;byte b3; 变量相加 变量相加，会将结果转为类型较大的，若为byte、char、short，则转为int。  1b3 = b1 + b2; //报错，右边计算结果为`int`类型 常量相加 常量相加，会先将结果计算出来，然后看是否在接收变量类型范围内，如果不在则报错。  12b3 = 3 + 4; //不会报错b3 = 300000000">
@@ -371,6 +371,11 @@
 <p>常量相加，会先将结果计算出来，然后看是否在接收变量类型范围内，如果不在则报错。</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">b3 = 3 + 4; //不会报错</span><br><span class="line">b3 = 3000000000000 + 4000000000000; //报错，结果超出`byte`范围</span><br></pre></td></tr></table></figure>
+<h3 id="超出范围数值截取"><a href="#超出范围数值截取" class="headerlink" title="超出范围数值截取"></a>超出范围数值截取</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">byte b = 130; // -126</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>给指定类型变量赋值，若超出范围则会操作其补码截取，之后转为原码显示。<br>| 状态 | 符号位 | 数值位 |<br>| - | - | - |<br>| 补码 | 1 | 0000010 |<br>| 反码 | 1 | 0000001 |<br>| 补码 | 1 | 1111110 |</p>
+</blockquote>
+
       
     </div>
     
@@ -538,7 +543,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#变量相加"><span class="nav-number">1.</span> <span class="nav-text">变量相加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常量相加"><span class="nav-number">2.</span> <span class="nav-text">常量相加</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#变量相加"><span class="nav-number">1.</span> <span class="nav-text">变量相加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常量相加"><span class="nav-number">2.</span> <span class="nav-text">常量相加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#超出范围数值截取"><span class="nav-number">3.</span> <span class="nav-text">超出范围数值截取</span></a></li></ol></div>
             
 
           </div>
