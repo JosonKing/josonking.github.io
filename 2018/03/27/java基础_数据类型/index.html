@@ -79,16 +79,16 @@
 
 
 
-<meta name="description" content="java是一种强类型语言，针对每一种数据都定义了明确的数据类型数据类型分类 基本数据类型（8种）引用数据类型（类，接口，数值）  资本数据类型（4类8种）   类型 数据类型 占用字节数(存储空间) 总占用位数 数值位占用位数 表数范围     整数 byte 1 8 7 -2^7 ~ 2^7-1(-128 ~ 127)   整数 short 2 16 15 -2^15 ~ 2^15-1   整数">
+<meta name="description" content="123byte b1 = 3;byte b2 = 4;byte b3; 变量相加 变量相加，会将结果转为类型较大的，若为byte、char、short，则转为int。  1b3 = b1 + b2; //报错，右边计算结果为`int`类型 常量相加 常量相加，会先将结果计算出来，然后看是否在接收变量类型范围内，如果不在则报错。  12b3 = 3 + 4; //不会报错b3 = 300000000">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java基础_数据类型">
+<meta property="og:title" content="java基础_常量相加、变量相加区别">
 <meta property="og:url" content="http://yoursite.com/2018/03/27/java基础_数据类型/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="java是一种强类型语言，针对每一种数据都定义了明确的数据类型数据类型分类 基本数据类型（8种）引用数据类型（类，接口，数值）  资本数据类型（4类8种）   类型 数据类型 占用字节数(存储空间) 总占用位数 数值位占用位数 表数范围     整数 byte 1 8 7 -2^7 ~ 2^7-1(-128 ~ 127)   整数 short 2 16 15 -2^15 ~ 2^15-1   整数">
-<meta property="og:updated_time" content="2018-03-28T13:37:39.929Z">
+<meta property="og:description" content="123byte b1 = 3;byte b2 = 4;byte b3; 变量相加 变量相加，会将结果转为类型较大的，若为byte、char、short，则转为int。  1b3 = b1 + b2; //报错，右边计算结果为`int`类型 常量相加 常量相加，会先将结果计算出来，然后看是否在接收变量类型范围内，如果不在则报错。  12b3 = 3 + 4; //不会报错b3 = 300000000">
+<meta property="og:updated_time" content="2018-03-29T14:49:36.692Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java基础_数据类型">
-<meta name="twitter:description" content="java是一种强类型语言，针对每一种数据都定义了明确的数据类型数据类型分类 基本数据类型（8种）引用数据类型（类，接口，数值）  资本数据类型（4类8种）   类型 数据类型 占用字节数(存储空间) 总占用位数 数值位占用位数 表数范围     整数 byte 1 8 7 -2^7 ~ 2^7-1(-128 ~ 127)   整数 short 2 16 15 -2^15 ~ 2^15-1   整数">
+<meta name="twitter:title" content="java基础_常量相加、变量相加区别">
+<meta name="twitter:description" content="123byte b1 = 3;byte b2 = 4;byte b3; 变量相加 变量相加，会将结果转为类型较大的，若为byte、char、short，则转为int。  1b3 = b1 + b2; //报错，右边计算结果为`int`类型 常量相加 常量相加，会先将结果计算出来，然后看是否在接收变量类型范围内，如果不在则报错。  12b3 = 3 + 4; //不会报错b3 = 300000000">
 
 
 
@@ -124,7 +124,7 @@
 
 
 
-  <title>java基础_数据类型 | Hexo</title>
+  <title>java基础_常量相加、变量相加区别 | Hexo</title>
   
 
 
@@ -188,7 +188,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -198,7 +198,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            About
+            Über
           </a>
         </li>
       
@@ -218,7 +218,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Categories
+            Kategorien
           </a>
         </li>
       
@@ -228,7 +228,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -248,7 +248,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
-            Search
+            Suche
           </a>
         </li>
       
@@ -312,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">java基础_数据类型</h1>
+          <h1 class="post-title" itemprop="name headline">java基础_常量相加、变量相加区别</h1>
         
 
         <div class="post-meta">
@@ -322,7 +322,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-27T21:10:18+08:00">
                 2018-03-27
@@ -362,93 +362,15 @@
       
 
       
-        <h2 id="java是一种强类型语言，针对每一种数据都定义了明确的数据类型"><a href="#java是一种强类型语言，针对每一种数据都定义了明确的数据类型" class="headerlink" title="java是一种强类型语言，针对每一种数据都定义了明确的数据类型"></a>java是一种强类型语言，针对每一种数据都定义了明确的数据类型</h2><h3 id="数据类型分类"><a href="#数据类型分类" class="headerlink" title="数据类型分类"></a>数据类型分类</h3><blockquote>
-<p>基本数据类型（8种）<br>引用数据类型（类，接口，数值）</p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">byte b1 = 3;</span><br><span class="line">byte b2 = 4;</span><br><span class="line">byte b3;</span><br></pre></td></tr></table></figure>
+<h3 id="变量相加"><a href="#变量相加" class="headerlink" title="变量相加"></a>变量相加</h3><blockquote>
+<p>变量相加，会将结果转为类型较大的，若为<code>byte、char、short</code>，则转为<code>int</code>。</p>
 </blockquote>
-<h3 id="资本数据类型（4类8种）"><a href="#资本数据类型（4类8种）" class="headerlink" title="资本数据类型（4类8种）"></a>资本数据类型（4类8种）</h3><table>
-<thead>
-<tr>
-<th>类型</th>
-<th>数据类型</th>
-<th>占用字节数(存储空间)</th>
-<th>总占用位数</th>
-<th>数值位占用位数</th>
-<th>表数范围</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>整数</td>
-<td>byte</td>
-<td>1</td>
-<td>8</td>
-<td>7</td>
-<td>-2^7 ~ 2^7-1(-128 ~ 127)</td>
-</tr>
-<tr>
-<td>整数</td>
-<td>short</td>
-<td>2</td>
-<td>16</td>
-<td>15</td>
-<td>-2^15 ~ 2^15-1</td>
-</tr>
-<tr>
-<td>整数</td>
-<td>int</td>
-<td>4</td>
-<td>32</td>
-<td>31</td>
-<td>-2^31 ~ 2^31-1</td>
-</tr>
-<tr>
-<td>整数</td>
-<td>long</td>
-<td>8</td>
-<td>64</td>
-<td>63</td>
-<td>-2^53 ~ 2^63-1</td>
-</tr>
-<tr>
-<td>浮点数</td>
-<td>float</td>
-<td>4</td>
-<td>32</td>
-<td>31</td>
-<td>-3.403E38 ~ 3.403E38</td>
-</tr>
-<tr>
-<td>浮点数</td>
-<td>double</td>
-<td>8</td>
-<td>64</td>
-<td>63</td>
-<td>-1.798E38 ~ 1.798E38</td>
-</tr>
-<tr>
-<td>字符</td>
-<td>char</td>
-<td>2</td>
-<td>16</td>
-<td>15</td>
-<td>-</td>
-</tr>
-<tr>
-<td>布尔</td>
-<td>boolean</td>
-<td>1</td>
-<td>8</td>
-<td>7</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>整数默认int类型，浮点数默认double类型。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b3 = b1 + b2; //报错，右边计算结果为`int`类型</span><br></pre></td></tr></table></figure>
+<h3 id="常量相加"><a href="#常量相加" class="headerlink" title="常量相加"></a>常量相加</h3><blockquote>
+<p>常量相加，会先将结果计算出来，然后看是否在接收变量类型范围内，如果不在则报错。</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int i = 100;</span><br><span class="line">long j = 100L;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">float f = 12.345F;</span><br><span class="line">double d = 12.345;</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">b3 = 3 + 4; //不会报错</span><br><span class="line">b3 = 3000000000000 + 4000000000000; //报错，结果超出`byte`范围</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -481,6 +403,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/29/java基础_常量相加、变量相加区别/" rel="prev" title="javase_编译运行基础">
+                javase_编译运行基础 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -534,10 +460,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
+            Übersicht
           </li>
         </ul>
       
@@ -561,8 +487,8 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">Artikel</span>
                 </a>
               </div>
             
@@ -573,7 +499,7 @@
               <div class="site-state-item site-state-categories">
                 
                   <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">categories</span>
+                  <span class="site-state-item-name">Kategorien</span>
                 
               </div>
             
@@ -584,7 +510,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">tags</span>
+                  <span class="site-state-item-name">Tags</span>
                 </a>
               </div>
             
@@ -616,7 +542,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#java是一种强类型语言，针对每一种数据都定义了明确的数据类型"><span class="nav-number">1.</span> <span class="nav-text">java是一种强类型语言，针对每一种数据都定义了明确的数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据类型分类"><span class="nav-number">1.1.</span> <span class="nav-text">数据类型分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资本数据类型（4类8种）"><span class="nav-number">1.2.</span> <span class="nav-text">资本数据类型（4类8种）</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#变量相加"><span class="nav-number">1.</span> <span class="nav-text">变量相加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常量相加"><span class="nav-number">2.</span> <span class="nav-text">常量相加</span></a></li></ol></div>
             
 
           </div>
