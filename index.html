@@ -311,7 +311,134 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/29/java基础_常量相加、变量相加区别/" itemprop="url">javase_编译运行基础</a></h1>
+                <a class="post-title-link" href="/2018/03/29/java基础_常量相加、变量相加区别/" itemprop="url">java基础_常量相加、变量相加区别</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-29T22:41:33+08:00">
+                2018-03-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">byte b1 = 3;</span><br><span class="line">byte b2 = 4;</span><br><span class="line">byte b3;</span><br></pre></td></tr></table></figure>
+<h3 id="变量相加"><a href="#变量相加" class="headerlink" title="变量相加"></a>变量相加</h3><blockquote>
+<p>变量相加，会将结果转为类型较大的，若为<code>byte、char、short</code>，则转为<code>int</code>。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b3 = b1 + b2; //报错，右边计算结果为`int`类型</span><br></pre></td></tr></table></figure>
+<h3 id="常量相加"><a href="#常量相加" class="headerlink" title="常量相加"></a>常量相加</h3><blockquote>
+<p>常量相加，会先将结果计算出来，然后看是否在接收变量类型范围内，如果不在则报错。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">b3 = 3 + 4; //不会报错</span><br><span class="line">b3 = 3000000000000 + 4000000000000; //报错，结果超出`byte`范围</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/29/javase_编译运行基础/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Joson King">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/self_logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/29/javase_编译运行基础/" itemprop="url">javase_编译运行基础</a></h1>
         
 
         <div class="post-meta">
@@ -371,133 +498,6 @@
 <p>classpath 路径不能有中文</p>
 </blockquote>
 
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/27/java基础_数据类型/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Joson King">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/self_logo.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/27/java基础_数据类型/" itemprop="url">java基础_常量相加、变量相加区别</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-27T21:10:18+08:00">
-                2018-03-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">byte b1 = 3;</span><br><span class="line">byte b2 = 4;</span><br><span class="line">byte b3;</span><br></pre></td></tr></table></figure>
-<h3 id="变量相加"><a href="#变量相加" class="headerlink" title="变量相加"></a>变量相加</h3><blockquote>
-<p>变量相加，会将结果转为类型较大的，若为<code>byte、char、short</code>，则转为<code>int</code>。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b3 = b1 + b2; //报错，右边计算结果为`int`类型</span><br></pre></td></tr></table></figure>
-<h3 id="常量相加"><a href="#常量相加" class="headerlink" title="常量相加"></a>常量相加</h3><blockquote>
-<p>常量相加，会先将结果计算出来，然后看是否在接收变量类型范围内，如果不在则报错。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">b3 = 3 + 4; //不会报错</span><br><span class="line">b3 = 3000000000000 + 4000000000000; //报错，结果超出`byte`范围</span><br></pre></td></tr></table></figure>
           
         
       
