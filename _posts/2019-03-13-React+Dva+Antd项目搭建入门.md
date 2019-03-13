@@ -110,14 +110,18 @@ export default {
   reducers: {},
 };
 ```
+
 在 `index.js` 里载入`model`
+
 ```
 // 3. Model
 + app.model(require('./models/products').default);
 ```
+
 ### connect 起来
 dva 提供了 connect 方法将 model 和 component 串联起来
 编辑 `routes/Products.js`
+
 ```
 import React from 'react';
 import { connect } from 'dva';
@@ -136,8 +140,11 @@ const Products = ({ dispatch, products }) => {
 export default connect(({ products }) => ({
   products,
 }))(Products);
+
 ```
+
 在 model 里面添加初始数据 `models/products.js`
+
 ```
 export default {
   namespace: 'products',
@@ -155,12 +162,16 @@ export default {
   ],
   reducers: {},
 };
+
 ```
+
 刷新浏览器看到以下效果
+
 ![数据列表](https://img-blog.csdnimg.cn/20190302182628262.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Jvb3Q1,size_16,color_FFFFFF,t_70)
 
 ### 添加删除等功能
 编辑 `components/ProductList.js`
+
 ```
 + import { Table, Popconfirm, Button } from 'antd';
 
@@ -183,7 +194,9 @@ ProductList.propTypes = {
 };
 ...
 ```
+
 编辑 `models/products.js`
+
 ```
 reducers: {
 +    'delete'(state, { payload: id }) {
@@ -191,7 +204,9 @@ reducers: {
 +     },
   },
 ```
+
 编辑 `routes/Products.js`
+
 ```
 + const Products = ({ dispatch, products }) => {
 +   function handleDelete(id) {
@@ -208,12 +223,17 @@ reducers: {
   );
 };
 ```
+
 刷新浏览器看到以下效果
+
 ![数据列表删除功能](https://img-blog.csdnimg.cn/20190302182715562.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Jvb3Q1,size_16,color_FFFFFF,t_70)
+
 ![项目文件组织结构(可 查看，删除 数据列表页面)](https://img-blog.csdnimg.cn/20190302182745193.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Jvb3Q1,size_16,color_FFFFFF,t_70)
+
 ### 使用 `Class` 语法创建拥有 `增/删/改/查` 功能的数据列表页面
 ### 定义路由
 新建路由组件`routes/Users.js`
+
 ```
 import React, { Component } from 'react';
 import { connect } from 'dva';
