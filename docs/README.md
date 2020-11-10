@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: /hero.png
-actionText: Get Started →
+heroImage: /hero.jpg
+actionText: 起航 →
 actionLink: /guide/
 features:
 - title: Simplicity First
@@ -12,4 +12,4 @@ features:
   details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
 footer: MIT Licensed | Copyright © 2020-present Joson King
 ---
-# Hello VuePress
+# Hello Web
