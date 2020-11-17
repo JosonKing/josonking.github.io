@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.jpg
+heroImage: /logo.jpg
 actionText: 起航 →
 actionLink: /guide/
 features:
