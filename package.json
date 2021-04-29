@@ -1,15 +1,34 @@
 {
-  "name": "josonking.github.io",
-  "version": "1.0.0",
   "private": true,
+  "name": "dumi-app",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "start": "dumi dev",
+    "build": "dumi build",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JosonKing/josonking.github.io",
+    "branch": "master"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
   },
   "devDependencies": {
-    "vuepress": "^1.7.1"
-  },
-  "repository": "git@github.com:JosonKing/josonking.github.io.git",
-  "author": "Joson5 <wangsanmu5@163.com>",
-  "license": "MIT"
+    "dumi": "^1.0.12",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "yorkie": "^2.0.0"
+  }
 }
