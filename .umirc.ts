@@ -7,5 +7,7 @@ export default defineConfig({
     ['zh-CN', '中文'],
     ['en-US', 'English'],
   ],
+  // base: '/josonking.github.io/',
+  // publicPath: '/josonking.github.io/',
   // more config: https://d.umijs.org/config
 });
