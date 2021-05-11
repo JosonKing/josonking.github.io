@@ -17,4 +17,5 @@ jobs:
         with:
           github_token: ${{ secrets.DEPLOY_KEY }}
           branch: gh-pages
-          folder: dist
+          folder: ./dist
+          publish_dir: ./
