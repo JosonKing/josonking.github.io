@@ -3,6 +3,8 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   title: 'Joson',
   mode: 'site',
+  logo: '/images/logo.jpg',
+  favicon: '/images/favicon.ico',
   locales: [
     ['zh-CN', '中文'],
     ['en-US', 'English'],
