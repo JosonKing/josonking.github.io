@@ -1,3 +1,12 @@
+---
+title: `postMate`使用教程
+order: 32
+toc: menu
+nav:
+  title: blog
+  order: 3
+---
+
 # `postMate`使用教程
 
 ## 特征
@@ -23,4 +32,4 @@
 
 2. `Parent`通过属性名称从`Child`获取值。 `Child`可以向`Parent`发送消息。 `Parent`可以在`Child`模型中调用函数。
 
-   ![postMate](/images/postMate.png)
+   ![postMate](./postMate/postMate.png)

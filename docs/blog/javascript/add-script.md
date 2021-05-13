@@ -1,3 +1,12 @@
+---
+title: React/Vue 添加`<script>`标签
+order: 31
+toc: menu
+nav:
+  title: blog
+  order: 3
+---
+
 # React/Vue 添加`<script>`标签
 
 ## 基本步骤

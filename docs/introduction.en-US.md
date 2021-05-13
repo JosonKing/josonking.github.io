@@ -1,4 +1,7 @@
 ---
+title: About
+order: 91
+toc: menu
 nav:
   title: About
   order: 9

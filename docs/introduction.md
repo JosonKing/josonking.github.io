@@ -1,4 +1,7 @@
 ---
+title: 关于我
+order: 91
+toc: menu
 nav:
   title: 关于我
   order: 9

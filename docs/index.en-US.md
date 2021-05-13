@@ -3,8 +3,8 @@ hero:
   title: Joson
   desc: Half a front-end developer
   actions:
-    - text: Introduction
-      link: /introduction
+    - text: Start learning
+      link: /note
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png
     title: code
