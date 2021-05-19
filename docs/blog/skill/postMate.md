@@ -3,7 +3,7 @@ title: `postMate`使用教程
 order: 32
 toc: menu
 nav:
-  title: blog
+  title: 博客
   order: 3
 ---
 

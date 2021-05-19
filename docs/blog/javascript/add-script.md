@@ -3,7 +3,7 @@ title: React/Vue 添加`<script>`标签
 order: 31
 toc: menu
 nav:
-  title: blog
+  title: 博客
   order: 3
 ---
 
