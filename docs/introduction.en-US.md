@@ -28,7 +28,11 @@ sidemenu: false
 
   - [x] Responsible for web back-end system development
 
-- `2018.3` ~ `至今` [kedacom](https://www.kedacom.com/cn)
+- `2018.3` ~ `2021.7` [kedacom](https://www.kedacom.com/cn)
+
+  - [x] Responsible for web front-end system development
+
+- `2021.7` ~ `up to now` [PwC](https://www.pwc.com/)
   - [x] Responsible for web front-end system development
 
 ## programming ability

@@ -28,7 +28,11 @@ sidemenu: false
 
   - [x] 负责 Web 后台系统开发
 
-- `2018.3` ~ `至今` [苏州科达上海研究所](https://www.kedacom.com/cn)
+- `2018.3` ~ `2021.7` [苏州科达上海研究所](https://www.kedacom.com/cn)
+
+  - [x] 负责 Web 前端系统开发
+
+- `2021.7` ~ `至今` [PwC](https://www.pwc.com/)
   - [x] 负责 Web 前端系统开发
 
 ## 编程能力
