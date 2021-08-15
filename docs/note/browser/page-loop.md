@@ -20,3 +20,19 @@ nav:
 ### XMLHttpRequest 工作流程图
 
 ![XMLHttpRequest](./page-loop/XMLHttpRequest.png)
+
+## 宏任务和微任务
+
+![宏任务和微任务](./page-loop/task.png)
+
+## Promise
+
+![Promise](./page-loop/promise.png)
+
+## async/await
+
+![async/await](./page-loop/async.png)
+
+### 协程执行流程图
+
+![协程执行流程图](./page-loop/coroutine.webp)
