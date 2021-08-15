@@ -27,5 +27,4 @@ nav:
 
 ## 渲染流程
 
-![渲染流程](./overview/render1.png)
-![渲染流程](./overview/render2.png)
+![渲染流程](./overview/render.png)
