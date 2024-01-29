@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.projectSidebar.category.Docusaurus": {
+    "message": "个人博客",
+    "description": "The label for category Docusaurus in sidebar projectSidebar"
+  },
+  "sidebar.projectSidebar.category.Tutorial - Basics": {
+    "message": "基础教程",
+    "description": "The label for category Tutorial - Basics in sidebar projectSidebar"
+  },
+  "sidebar.projectSidebar.category.Tutorial - Basics.link.generated-index.description": {
+    "message": "5 分钟学会 Docusaurus 最重要的部分。",
+    "description": "The generated-index page description for category Tutorial - Basics in sidebar projectSidebar"
+  },
+  "sidebar.projectSidebar.category.Tutorial - Extras": {
+    "message": "高级扩展",
+    "description": "The label for category Tutorial - Extras in sidebar projectSidebar"
+  },
+  "sidebar.aiSidebar.category.Generative AI for Everyone": {
+    "message": "面向每个人的生成式AI",
+    "description": "The label for category Generative AI for Everyone in sidebar aiSidebar"
+  },
+  "sidebar.aiSidebar.category.Generative AI for Everyone.link.generated-index.description": {
+    "message": "面向每个人的生成式AI。",
+    "description": "The generated-index page description for category Generative AI for Everyone in sidebar aiSidebar"
+  }
+}
